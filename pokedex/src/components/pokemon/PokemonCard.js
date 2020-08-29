@@ -6,8 +6,8 @@ import styled from 'styled-components';
 import spinner from '../pokemon/loading_circle.gif'
 
 const Sprite = styled.img`
-    width: 5em;
-    height: 5em;
+    width: 8em;
+    height: 8em;
     display: none
 `;
 
@@ -83,7 +83,7 @@ componentDidMount () {
                     </h6>
                     ) : null}
                     <div className="card-body mx-auto">
-                    <h6 className="card-title">{this.state.name.toLowerCase().split(" ").map(letter => letter.charAt(0).toUpperCase() + letter.substring(1)).join(' ')}</h6>
+                    <h5 className="card-title">{this.state.name.toLowerCase().split(" ").map(letter => letter.charAt(0).toUpperCase() + letter.substring(1)).join(' ')}</h5>
                     </div>
                 </Card>
                 </StyledLink>
